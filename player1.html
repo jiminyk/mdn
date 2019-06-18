@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Player 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <p>Player 1: Lissett</p>
+    
+    <script>
+        const para = document.querySelector('p');
+
+        para.addEventListener('click', updateName);
+
+        function updateName() {
+            let name = prompt('Enter a new name')
+            para.textContent = 'Player 1: ' + name;
+        }
+    </script>
+</body>
+</html>
